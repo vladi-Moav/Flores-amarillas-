@@ -8,7 +8,6 @@ body {
     background: linear-gradient(to top, #a1d4f5 0%, #d5eaf5 60%, #ffffff 100%);
     overflow: hidden;
     font-family: 'Playfair Display', serif;
-
     transition: background 1s ease;
 }
 
@@ -24,10 +23,10 @@ body.night-mode {
     height: 100%;
     background: transparent;
     background-image:
-            radial-gradient(white, rgba(255,255,255,0.2) 2px, transparent 40px),
-            radial-gradient(white, rgba(255,255,255,0.15) 1px, transparent 30px),
-            radial-gradient(white, rgba(255,255,255,0.1) 2px, transparent 40px),
-            radial-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.1) 2px, transparent 30px);
+        radial-gradient(white, rgba(255,255,255,0.2) 2px, transparent 40px),
+        radial-gradient(white, rgba(255,255,255,0.15) 1px, transparent 30px),
+        radial-gradient(white, rgba(255,255,255,0.1) 2px, transparent 40px),
+        radial-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.1) 2px, transparent 30px);
     background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
     opacity: 0;
@@ -116,7 +115,6 @@ body.night-mode #night-mode-toggle {
     transform: rotate(-10deg) scaleX(-1);
 }
 
-
 .head {
     width: 250px;
     height: 250px;
@@ -125,7 +123,6 @@ body.night-mode #night-mode-toggle {
     transform: translateX(-50%);
     bottom: 380px;
 }
-
 
 .center {
     width: 120px;
@@ -140,7 +137,6 @@ body.night-mode #night-mode-toggle {
     box-shadow: inset 0 0 15px #2a1a0a;
 }
 
-
 .center::before {
     content: '';
     position: absolute;
@@ -148,13 +144,12 @@ body.night-mode #night-mode-toggle {
     height: 100%;
     border-radius: 50%;
     background-image:
-            radial-gradient(#9d785a 15%, transparent 16%),
-            radial-gradient(#9d785a 15%, transparent 16%);
+        radial-gradient(#9d785a 15%, transparent 16%),
+        radial-gradient(#9d785a 15%, transparent 16%);
     background-size: 10px 10px;
     background-position: 0 0, 5px 5px;
     opacity: 0.3;
 }
-
 
 .petal {
     position: absolute;
@@ -164,7 +159,6 @@ body.night-mode #night-mode-toggle {
     box-shadow: inset 0 -5px 10px rgba(0,0,0,0.15);
     border: 1px solid #ffc800;
 }
-
 
 .petal-back {
     width: 60px;
@@ -237,7 +231,6 @@ body.night-mode #night-mode-toggle {
     }
 }
 
-
 @keyframes sway {
     0%, 100% {
         transform: rotate(3deg);
@@ -246,6 +239,7 @@ body.night-mode #night-mode-toggle {
         transform: rotate(-3deg);
     }
 }
+
 #particle-canvas {
     position: absolute;
     top: 0;
@@ -253,15 +247,4 @@ body.night-mode #night-mode-toggle {
     width: 100%;
     height: 100%;
     pointer-events: none;
-}
-                            
-                        
-TLANEX
-Plantillas HTML, CSS y JavaScript para celebrar cualquier ocasión.
-
-TikTok
-Instagram
-Links Rapidos
-Sobre Nosotros
-Politicas de Privacidad
-Terminos y Condiciones
+        }
