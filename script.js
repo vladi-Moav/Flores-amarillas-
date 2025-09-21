@@ -3,14 +3,14 @@ const phrases = [
     "Contigo todo es mejor.",
     "Tu actitud lo es todo.",
     "Gracias por ser mi aventura.",
-    "gracias por llegar a mi life jsjdk.",
-    "Nunca cambies.", 
+    "Gracias por llegar a mi vida.",
+    "Nunca cambies.",
     "Nuestra amistad es increíble.",
-    "Eres mi ma quita favorita.",
+    "Eres mi manquita favorita.",
     "A tu lado me vuelvo manco.",
     "Para siempre y un día más.",
     "Creas un mundo nuevo para mí.",
-    "Eres mi canción pegadisa."
+    "Eres mi canción pegadiza."
 ];
 
 let phraseIndex = 0;
@@ -57,9 +57,9 @@ function createPetals() {
     });
 }
 
+// --- Partículas en el centro ---
 const canvas = document.getElementById('particle-canvas');
 const ctx = canvas.getContext('2d');
-
 const centerDiv = document.querySelector('.center');
 canvas.width = centerDiv.clientWidth;
 canvas.height = centerDiv.clientHeight;
@@ -76,13 +76,11 @@ class Particle {
         this.life = 100;
         this.maxLife = 100;
     }
-
     update() {
         this.x += this.vx;
         this.y += this.vy;
         this.life -= 1;
     }
-
     draw() {
         ctx.beginPath();
         ctx.globalAlpha = this.life / this.maxLife;
@@ -117,13 +115,9 @@ window.onload = () => {
 
     const nightModeToggle = document.getElementById('night-mode-toggle');
     nightModeToggle.addEventListener('click', () => {
-
         document.body.classList.toggle('night-mode');
-
-        if (document.body.classList.contains('night-mode')) {
-            nightModeToggle.textContent = 'Modo Día ☀️';
-        } else {
-            nightModeToggle.textContent = 'Modo Noche 🌙';
-        }
+        nightModeToggle.textContent = document.body.classList.contains('night-mode')
+            ? 'Modo Día ☀️'
+            : 'Modo Noche 🌙';
     });
 };
