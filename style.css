@@ -195,15 +195,17 @@ body.night-mode #night-mode-toggle {
 
 .floating-phrase {
     position: absolute;
-    color: #911708;
+    color: #FFFFFF;
     font-size: 22px;
+    font-weight: bold;
     font-style: italic;
     white-space: nowrap;
     user-select: none;
     pointer-events: none;
-    animation: floatUp 5s ease-out forwards;
+    animation: floatUp 8s ease-out forwards;
     transition: color 1s ease;
-}
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
+} 
 
 .petal.falling {
     animation: fallAndFade 2.5s ease-in forwards;
