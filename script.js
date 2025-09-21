@@ -27,7 +27,7 @@ function showPhrase(x, y) {
   phrase.style.fontSize = "1.4rem";
   phrase.style.fontWeight = "bold";
   phrase.style.pointerEvents = "none";
-  phrase.style.animation = "floatUp 3s ease-out forwards"; // ⬅️ Duración aumentada
+  phrase.style.animation = "floatUp 5s ease-out forwards"; // ⬅️ Duración aumentada
 
   document.body.appendChild(phrase);
 
